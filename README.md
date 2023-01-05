@@ -328,13 +328,16 @@ python main.py
 ## Thanks to
 
 • [banghasan](https://github.com/banghasan)
+
 • [butthx](https://github.com/butthx)
+
 • [rushkii](https://github.com/rushkii)
+
 • [hansputera](https://github.com/hansputera)
 
 ## License
 
-Lisensi [https://unlicense.org](The Unlicense)
+Lisensi [The Unlicense](https://unlicense.org)
 
 ## Nota Bene
 
