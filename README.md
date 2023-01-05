@@ -214,7 +214,7 @@ Kode diatas menunjukkan bahwa pesan akan di terima jika tanggal `1` dan `23` saj
 
 #### Argumen `month`
 
-`month` di gunakan untuk mengecek, apakah bulan dimana pesan itu diterima sama dengan bulan yang di isi pada argumen `month`, apabila sama maka diterima.
+`month` di gunakan untuk mengecek, apakah bulan dimana pesan itu diterima sama dengan bulan yang di isi pada argumen `month`, maka diterima.
 
 ##### Penggunaan
 
