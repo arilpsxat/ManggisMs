@@ -327,13 +327,10 @@ python main.py
 
 ## Thanks to
 
-• [banghasan](https://github.com/banghasan)
-
-• [butthx](https://github.com/butthx)
-
-• [rushkii](https://github.com/rushkii)
-
-• [hansputera](https://github.com/hansputera)
++ [banghasan](https://github.com/banghasan)
++ [butthx](https://github.com/butthx)
++ [rushkii](https://github.com/rushkii)
++ [hansputera](https://github.com/hansputera)
 
 ## License
 
