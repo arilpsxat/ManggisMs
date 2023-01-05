@@ -1,3 +1,5 @@
+# @author Aril Psxat
+
 from module import Telegram
 
 bot = Telegram('BOT_TOKEN', 'TIME_ZONE')
