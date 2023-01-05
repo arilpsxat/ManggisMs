@@ -240,7 +240,9 @@ while True:
 | 11     | November  |
 | 12     | Desember  |
 
-Kode di atas menunjukkan bahwa, pesan yang diterima hanya pada bulan `Januari`, `Frebuari` dan `November` saja.
+Kode di atas menunjukkan bahwa, pesan yang diterima hanya pada bulan `Januari`, `Februari` dan `November` saja.
+
+---
 
 Teman² juga bisa menambahkan statement elif, seperti di bawah ini
 
