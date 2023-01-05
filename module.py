@@ -1,3 +1,5 @@
+# @author Aril Psxat
+
 from requests import post
 from json import loads
 from datetime import datetime
