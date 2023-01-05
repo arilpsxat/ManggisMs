@@ -23,9 +23,9 @@ Kemudian, untuk `TIME_ZONE` ganti dengan zona waktu teman². Seperti di bawah in
 ```python
 bot = Telegram('1234567898:AAEz2T73lm-5mOaoC1FaZ_IS0TXzaD3Pv4k', 'Etc/GMT-7')
 ```
-> - `Etc/GMT-7` untuk **WIB**
-> - `Etc/GMT-8` untuk **WITA**
-> - `Etc/GMT-9` untuk **WIT**
+- `Etc/GMT-7` untuk **WIB**
+- `Etc/GMT-8` untuk **WITA**
+- `Etc/GMT-9` untuk **WIT**
 
 ## Memfilter pesan
 
