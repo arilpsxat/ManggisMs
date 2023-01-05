@@ -99,7 +99,7 @@ Kode di atas menunjukkan bahwa hanya pesan berupa gambar saja yang akan diterima
 
 #### Argumen `mcapt`
 
-`mcapt` di gunakan untuk menegecek caption yang ada pada animation, video, photo, dll. Apabila caption sama dengan isian `mcapt`, maka pesan akan di terima.
+`mcapt` di gunakan untuk mengecek caption yang ada pada animation, video, photo, dll. Apabila caption sama dengan isian `mcapt`, maka pesan akan di terima.
 
 ##### Penggunaan
 
@@ -144,12 +144,12 @@ while True:
             ...
 ```
 
-> `True` untuk Benar(user memakai username)
-> `False` untuk Salah(user tidak memakai username)
-
-> Apabila teman² mengisi `mfusername` dengan `False`, maka akan berfungsi sebagai kebalikannya `True`(hanya pesan user yang tidak memakai username yang di terima, sedangakan user yang memakai username pesannya akan di abaikan.)
+- `True` untuk Benar(user memakai username)
+- `False` untuk Salah(user tidak memakai username)
 
 Kode di atas menunjukkan bahwa hanya pesan group dengan user yang memakai username saja yang di terima, sedangkan user yang tidak memakai username pesannya akan di abaikan.
+
+> Apabila teman² mengisi `mfusername` dengan `False`, maka akan berfungsi sebagai kebalikannya `True`(hanya pesan user yang tidak memakai username yang di terima, sedangakan user yang memakai username pesannya akan di abaikan)
 
 #### Argumen `clock`
 
@@ -164,7 +164,7 @@ while True:
             ...
 ```
 
-Kode di atas menunjukkan bahwa, apabila pesan yang di terima itu berada di antara jam `1:0 - 16:38` yang diterima. Mungkin teman² akan mengerti dengan melihat table di bawah ini
+Kode di atas menunjukkan bahwa, apabila pesan yang di terima itu berada di antara jam `1:0 - 16:38`, maka akan diterima. Mungkin teman² akan mengerti dengan melihat table di bawah ini
 
 | Jam   | Sama Dengan |
 | ----- | ----------- |
@@ -327,10 +327,10 @@ python main.py
 
 ## Thanks to
 
-+ [banghasan](https://github.com/banghasan)
-+ [butthx](https://github.com/butthx)
-+ [rushkii](https://github.com/rushkii)
-+ [hansputera](https://github.com/hansputera)
+- [banghasan](https://github.com/banghasan)
+- [butthx](https://github.com/butthx)
+- [rushkii](https://github.com/rushkii)
+- [hansputera](https://github.com/hansputera)
 
 ## License
 
