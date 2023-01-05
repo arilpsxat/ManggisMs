@@ -293,19 +293,19 @@ while True:
 
 Atau teman² bisa menggunakan property yang didalamnya berupa field yang sudah disediakan, berikut beberapa property field
 
-- `bot.ac` from `Message => From => Id`
-- `bot.ad` from `Message => From => First Name`
-- `bot.ae` from `Message => From => Last Name`
-- `bot.af` from `Message => From => Username`
-- `bot.ag` from `Message => Date`
-- `bot.ai` from `Message => Chat => Id`
-- `bot.aj` from `Message => Chat => Type`
-- `bot.ak` from `Message => Chat => Title`
-- `bot.al` from `Message => Chat => Username`
-- `bot.am` from `Message => Chat => First Name`
-- `bot.an` from `Message => Chat => Last Name`
-- `bot.ao` from `Message => Text`
-- `bot.ap` from `Message => Caption`
+- `bot.ac` from `message=>from=>id`
+- `bot.ad` from `message=>from=>first_name`
+- `bot.ae` from `message=>from=>last_name`
+- `bot.af` from `message=>from=>username`
+- `bot.ag` from `message=>date`
+- `bot.ai` from `message=>chat=>id`
+- `bot.aj` from `message=>chat=>type`
+- `bot.ak` from `message=>chat=>title`
+- `bot.al` from `message=>chat=>username`
+- `bot.am` from `message=>chat=>first_name`
+- `bot.an` from `message=>chat=>last_name`
+- `bot.ao` from `message=>text`
+- `bot.ap` from `message=>caption`
 
 ```python
 while True:
@@ -336,6 +336,6 @@ python main.py
 
 Lisensi [The Unlicense](https://unlicense.org)
 
-## Nota Bene
+### Nota Bene
 
 Saya minta maaf apabila ada kesalahan pada penamaan dan penulisan, dan saya minta maaf apabila ada kata yang tidak sesuai.
