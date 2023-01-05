@@ -1,5 +1,3 @@
-# @author Aril Psxat
-
 from requests import post
 from json import loads
 from datetime import datetime
@@ -11,7 +9,7 @@ class Telegram:
         self.url = 'https://api.telegram.org/bot' + bot_token + '/'
         self.timezone = time_zone
         self.response = post(self.url + 'getUpdates', {'offset': -1})
-        if self.response.ok == True:
+        if self.response.ok:
             if loads(self.response.text)['result'] == []:
                 print('Silahkan kirim pesan terlebih dahulu ke bot anda!.')
                 exit()
@@ -29,90 +27,27 @@ class Telegram:
     @property
     def centMessage(self):
         self.response = post(self.url + 'getUpdates', {'offset': self.offset})
-        if self.response.ok == True:
+        if self.response.ok:
             if loads(self.response.text)['result'] == []:
                 return False
             else:
                 self.update = loads(self.response.text)['result'][0]
-                try:
-                    self.aa = self.update['message']
-                except:
-                    self.aa = None
-                finally:
-                    try:
-                        self.ab = self.aa['from']
-                    except:
-                        self.ab = None
-                    finally:
-                        try:
-                            self.ac = self.ab['id']
-                        except:
-                            self.ac = 404
-                        finally:
-                            try:
-                                self.ad = self.ab['first_name']
-                            except:
-                                self.ad = 'None'
-                            finally:
-                                try:
-                                    self.ae = self.ab['last_name']
-                                except:
-                                    self.ae = 'None'
-                                finally:
-                                    try:
-                                        self.af = self.ab['username']
-                                    except:
-                                        self.af = 'None'
-                                    finally:
-                                        try:
-                                            self.ag = self.aa['date']
-                                        except:
-                                            self.ag = 404
-                                        finally:
-                                            try:
-                                                self.ah = self.aa['chat']
-                                            except:
-                                                self.ah = None
-                                            finally:
-                                                try:
-                                                    self.ai = self.ah['id']
-                                                except:
-                                                    self.ai = 404
-                                                finally:
-                                                    try:
-                                                        self.aj = self.ah['type']
-                                                    except:
-                                                        self.aj = 'None'
-                                                    finally:
-                                                        try:
-                                                            self.ak = self.ah['title']
-                                                        except:
-                                                            self.ak = 'None'
-                                                        finally:
-                                                            try:
-                                                                self.al = self.ah['username']
-                                                            except:
-                                                                self.al = 'None'
-                                                            finally:
-                                                                try:
-                                                                    self.am = self.ah['first_name']
-                                                                except:
-                                                                    self.am = 'None'
-                                                                finally:
-                                                                    try:
-                                                                        self.an = self.ah['last_name']
-                                                                    except:
-                                                                        self.an = 'None'
-                                                                    finally:
-                                                                        try:
-                                                                            self.ao = self.aa['text']
-                                                                        except:
-                                                                            self.ao = 'None'
-                                                                        finally:
-                                                                            try:
-                                                                                self.ap = self.aa['caption']
-                                                                            except:
-                                                                                self.ap = 'None'
+                self.aa = self.update.get('message')
+                self.ab = self.aa.get('from')
+                self.ac = self.ab.get('id')
+                self.ad = self.ab.get('first_name')
+                self.ae = self.ab.get('last_name')
+                self.af = self.ab.get('username')
+                self.ag = self.aa.get('date')
+                self.ah = self.aa.get('chat')
+                self.ai = self.ah.get('id')
+                self.aj = self.ah.get('type')
+                self.ak = self.ah.get('title')
+                self.al = self.ah.get('username')
+                self.am = self.ah.get('first_name')
+                self.an = self.ah.get('last_name')
+                self.ao = self.aa.get('text')
+                self.ap = self.aa.get('caption')
                 self.offset = self.offset + 1
                 return True
         else:
@@ -171,7 +106,7 @@ class Telegram:
                 if self.mctitle != True:
                     self.cme.append(False)
             elif a == 'mfusername':
-                if kwargs['mfusername'][0] == True:
+                if kwargs['mfusername'][0]:
                     if 'username' in self.ah:
                         self.cme.append(True)
                     else:
