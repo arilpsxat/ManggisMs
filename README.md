@@ -41,9 +41,9 @@ Untuk memfilter pesan yang masuk, teman² bisa gunakan `bot.cektMessage()` kemud
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start', '/help']):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start', '/help']):
+            ...
 ```
 
 Kode di atas mengartikan bahwa hanya pesan `/start` dan `/help` yang akan di terima, dan diproses.
@@ -58,9 +58,9 @@ Kode di atas mengartikan bahwa hanya pesan `/start` dan `/help` yang akan di ter
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start'], mfid=[1234567898, 9876543212]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start'], mfid=[1234567898, 9876543212]):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa hanya pesan text `/start` yang di kirim oleh user dengan id `1234567898` dan `9876543212` saja yang akan di terima, dan di proses.
@@ -73,9 +73,9 @@ Kode di atas menunjukkan bahwa hanya pesan text `/start` yang di kirim oleh user
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mfid=[1234567898, 9876543212], mtext=['/start'], mctype=['group']):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mfid=[1234567898, 9876543212], mtext=['/start'], mctype=['group']):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa hanya pesan text `/start` yang di kirim oleh user id `1234567898` dan `9876543212` dari pesan `group` saja yang diproses, jadi apabila kedua user id itu mengirim di chat private, maka bot akan mengabaikannya.
@@ -90,9 +90,9 @@ Kode di atas menunjukkan bahwa hanya pesan text `/start` yang di kirim oleh user
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mform=['photo']):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mform=['photo']):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa hanya pesan berupa gambar saja yang akan diterima, dan di proses.
@@ -105,9 +105,9 @@ Kode di atas menunjukkan bahwa hanya pesan berupa gambar saja yang akan diterima
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mform=['photo'], mcapt=['/convert']):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mform=['photo'], mcapt=['/convert']):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa hanya pesan berupa foto dengan caption `/convert` saja yang akan di terima, selain itu maka akan di abaikan.
@@ -122,9 +122,9 @@ Kode di atas menunjukkan bahwa hanya pesan berupa foto dengan caption `/convert`
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mctitle=['ManggisMs']):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mctitle=['ManggisMs']):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa hanya menerima pesan yang chat title-nya berupa `ManggisMs`.
@@ -139,9 +139,9 @@ Kode di atas menunjukkan bahwa hanya menerima pesan yang chat title-nya berupa `
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mctype=['group'], mfusername=[True]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mctype=['group'], mfusername=[True]):
+            ...
 ```
 
 > `True` untuk Benar(user memakai username)
@@ -159,9 +159,9 @@ Kode di atas menunjukkan bahwa hanya pesan group dengan user yang memakai userna
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(clock=[1, 0, 16, 38]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(clock=[1, 0, 16, 38]):
+            ...
 ```
 
 Kode di atas menunjukkan bahwa, apabila pesan yang di terima itu berada di antara jam `1:0 - 16:38` yang diterima. Mungkin teman² akan mengerti dengan melihat table di bawah ini
@@ -180,9 +180,9 @@ Kode di atas menunjukkan bahwa, apabila pesan yang di terima itu berada di antar
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(day=[0, 1, 6]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(day=[0, 1, 6]):
+            ...
 ```
 
 | Number | Hari   |
@@ -205,9 +205,9 @@ Kode di atas menunjukkan bahwa hanya pesan yang di kirim pada hari `Ahad`, `Seni
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(dom=[1, 23]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(dom=[1, 23]):
+            ...
 ```
 
 Kode diatas menunjukkan bahwa pesan akan di terima pada tanggal `1` dan `23` saja, untuk selain tanggal tersebut bot akan mengabaikannya.
@@ -220,9 +220,9 @@ Kode diatas menunjukkan bahwa pesan akan di terima pada tanggal `1` dan `23` saj
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(month=[1, 2, 11]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(month=[1, 2, 11]):
+            ...
 ```
 
 | Number | Bulan     |
@@ -246,13 +246,13 @@ Teman² juga bisa menambahkan statement elif, seperti di bawah ini
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start']):
-			...
-		elif bot.cektMessage(mform=['photo'], mcapt=['/convert']):
-			...
-		elif bot.cektMessage(mtext=['/database'], mfid=[1234567898]):
-			...
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start']):
+            ...
+        elif bot.cektMessage(mform=['photo'], mcapt=['/convert']):
+            ...
+        elif bot.cektMessage(mtext=['/database'], mfid=[1234567898]):
+            ...
 ```
 
 ## Proses pesan
@@ -261,9 +261,9 @@ Maksud proses pesan adalah bagaimana cara untuk mengirim pesan pada user(cara me
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start']):
-			bot.postReq('sendMessage', text=['Hai kak!'], chat_id=[bot.ai])
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start']):
+            bot.postReq('sendMessage', text=['Hai kak!'], chat_id=[bot.ai])
 ```
 
 Kode di atas menunjukkan bahwa, apabila seseorang mengirim pesan text `/start`, maka bot akan membalas `Hai kak!`.
@@ -280,15 +280,15 @@ Untuk mendapatkan field, teman² bisa lakukan secara manual, seperti dibawah ini
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start']):
-			chatid = bot.update['message]['chat']['id']
-			bot.postReq('sendMessage', text=['Hai kak!'], chat_id=[chat_id])
-		elif bot.cektMessage(mtext=['/help']):
-			chatid = bot.update['message]['chat']['id']
-			iduser = bot.update['message']['from']['id']
-			teks = bot.update['message']['text']
-			bot.postReq('sendMessage', text=['Pesan: ' + teks + '\nId: ' + iduser], chat_id=[chat_id])
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start']):
+            chatid = bot.update['message]['chat']['id']
+            bot.postReq('sendMessage', text=['Hai kak!'], chat_id=[chat_id])
+        elif bot.cektMessage(mtext=['/help']):
+            chatid = bot.update['message]['chat']['id']
+            iduser = bot.update['message']['from']['id']
+            teks = bot.update['message']['text']
+            bot.postReq('sendMessage', text=['Pesan: ' + teks + '\nId: ' + iduser], chat_id=[chat_id])
 ```
 
 Atau teman² bisa menggunakan property yang didalamnya berupa field yang sudah disediakan, berikut beberapa property field
@@ -309,9 +309,9 @@ Atau teman² bisa menggunakan property yang didalamnya berupa field yang sudah d
 
 ```python
 while True:
-	if bot.centMessage:
-		if bot.cektMessage(mtext=['/start']):
-			bot.postReq('sendMessage', text=['Anda mengirim pesan text: ' + bot.ao], chat_id=[bot.ai])
+    if bot.centMessage:
+        if bot.cektMessage(mtext=['/start']):
+            bot.postReq('sendMessage', text=['Anda mengirim pesan text: ' + bot.ao], chat_id=[bot.ai])
 ```
 
 ## Menjalankan script
