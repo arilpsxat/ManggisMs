@@ -210,7 +210,7 @@ while True:
             ...
 ```
 
-Kode diatas menunjukkan bahwa pesan akan di terima pada tanggal `1` dan `23` saja, untuk selain tanggal tersebut bot akan mengabaikannya.
+Kode diatas menunjukkan bahwa pesan akan di terima jika tanggal `1` dan `23` saja, untuk selain tanggal tersebut bot akan mengabaikannya.
 
 #### Argumen `month`
 
